@@ -1,0 +1,23 @@
+// 변수 var let const ->ES6 
+        // Babel : ES6 (IE는 ES6의 문법을 대부분 이해못함 -> ES5로 변환하기위해 사용)
+        // JS -> ES6 -> Babel -> Webpack  
+        // legacy code 웹 에이전시 (고인물)
+        // var 호이스팅등의 문제가 있으나 사용하는 곳이 꽤 존재함
+
+        var num = Math.random(); // 0~0.99999999...
+        // 1~45
+        Math.random() * 45; //0~44.99999....
+        Math.random()*45+1; // 0~45.999...
+
+        배열이름.indexOf(3) 배열에 3이라는 값이 있는지 확인
+
+        var lotto=[];
+        for(i=0;i<6;i++){
+            var num = parseInt(Math.random()*45+1);
+            if (lotto.indexOf(num) == -1){// num의 값이 배열에 존재하지 않으면
+                lotto.push(num);
+            }
+        }
+        document.write(lotto);
+
+        lotto.sort(); // ascii code 기준으로 정렬 
